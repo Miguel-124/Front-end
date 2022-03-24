@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Saira:wght@300;400&display=swap');
+
+/*font-family: 'Saira', sans-serif;*/
+/*font-family: 'Saira Condensed', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #29a6dc;
+    overflow: hidden;
+}
+
+header > * {
+    position: absolute;
+}
+
+header img {
+    height: 50%;
+    bottom: 0;
+    right: 0%;
+
+}
+
+header .welcome {
+    z-index: 1;
+    top: 6%;
+    right: 5%;
+    left: 5%;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+header h1 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+header button {
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+header button:hover {
+    transition: 1s;
+    background-color: #c78b2b;
+}
+
+@media (orientation: landscape) {
+    header img {
+        height: 80%;
+        bottom: 0;
+        right: -5%;
+    }
+
+    header div.welcome {
+        left: 5%;
+        right: 45%;
+        top: 10%;
+    }
+}
+
+@media (orientation: portrait) and (min-height: 600px) and (min-width: 200px) {
+    header img {
+        height: 50%;
+        right: 0%;
+    }
+
+    header .welcome {
+        top: 5%;
+        font-size: 38px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (orientation: portrait) and (min-height: 600px) and (min-width: 200px) {
+    header img {
+        height: 50%;
+        right: -10%;
+    }
+}
+
+@media (orientation: portrait) and (min-height: 950px) and (min-width: 750px) {
+    header img {
+        right: 0%;
+    }
+
+    header .welcome {
+        top: 5%;
+        font-size: 110px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    header div.welcome button {
+        font-size: 30px;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 200px) and (min-width: 200px) {
+    header img {
+        height: 90%;
+        right: -15%;
+    }
+
+    header p {
+        margin-top: 5px;
+    }
+
+    header div.welcome {
+        font-size: 10vh;
+        left: -5vw;
+        top: 5%;
+        margin-left: 5vw;
+        width: 50vw;
+    }
+
+    header h1 {
+        margin-top: 5px;
+        font-size: 5vw;
+        padding: 0 0 5x 1px;
+    }
+
+    header div.welcome h2 {
+        font-size: 4vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header div.welcome button {
+        font-size: 4vw;
+        margin-left: 5px;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 350px) and (min-width: 650px) {
+    header img {
+        height: 90%;
+        right: -20px;
+    }
+
+    header div.welcome h1 {
+        font-size: 6vh;
+    }
+
+    header div.welcome h2 {
+        font-size: 6vh;
+    }
+
+    header div.welcome button {
+        font-size: 6vh;
+    }
+
+    header div.welcome {
+        font-size: 70px;
+        left: -5%;
+        top: 4%;
+        margin-left: 10vw;
+    }
+}
+
+
+
+@media (orientation: landscape) and (min-height: 500px) and (min-width: 650px) {
+    header img {
+        right: -25%;
+        height: 85%;
+    }
+
+    header div.welcome {
+        top: 0%;
+        font-size: 80px;
+        left: 2%;
+        right: 55%;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    header button {
+        line-height: 40px;
+        width: 30vw;
+        padding: 0px 5px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
+
+    header div.welcome button {
+        font-size: 25px;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 650px) and (min-width: 1000px) {
+    header img {
+        right: -10%;
+        height: 90%;
+    }
+
+    header div.welcome {
+        top: 15%;
+        font-size: 80px;
+        left: 2%;
+        right: 47%;
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    header div.welcome button {
+        font-size: 30px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1000px) and (min-height: 700px) {
+    header img {
+        height: 80%;
+        right: -10%
+    }
+
+    header div.welcome {
+        /*        left: -5%;*/
+        top: 10%;
+        font-size: 120px;
+        margin-left: 20px;
+    }
+
+    header div.welcome h1 {
+        font-size: 50px;
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+
+    header div.welcome h2 {
+        font-size: 40px;
+        margin-left: 0px;
+        margin-right: 50px;
+    }
+
+    header div.welcome button {
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    header button {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    header button:hover {
+        background-color: #fff;
+        color: #111;
+    }
+}
+
+section {
+    text-align: center;
+}
+
+.features {
+    margin-top: 10%;
+    padding: 5%;
+}
+
+.features h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.features h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.features img {
+    width: 100%;
+    max-width: 375px;
+}
+
+.features p {
+    font-family: 'Saira', sans-serif;
+    margin-top: 5px;
+}
+
+@media (min-width:360px) {
+
+    .features h1 {
+        font-size: 28px;
+    }
+
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .features p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) {
+    .features h1 {
+        font-size: 38px;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1024px) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 2%
+    }
+
+    .features {
+        margin-top: 0;
+    }
+
+    .features h1 {
+        font-size: 48px;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (min-width:1600px) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 2%
+    }
+
+    .features {
+        max-width: 1600px
+    }
+
+    .features h1 {
+        font-size: 48px;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+.portfolio {
+    background-color: black;
+    padding: 10px 0 30px
+}
+
+.portfolio h1 {
+    font-size: 28px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.portfolio .web img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.portfolio .about {
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Saira', sans-serif;
+    color: white;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+    text-indent: 0px;
+}
+
+.portfolio .about h2 {
+    font-size: 3vw;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+}
+
+.portfolio .about p {
+    padding-left: 20px;
+    font-size: 1.4vw;
+}
+
+.portfolio .project {
+    margin: 0 auto 20px;
+    max-width: 1000px;
+
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #cc2c4b;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: deepskyblue;
+}
+
+@media (orientation: landscape) {
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .project:nth-of-type(even) .web {
+        float: right;
+    }
+
+    .project:nth-of-type(even) .about h2 {
+        text-indent: -20px;
+        margin-left: 20px;
+    }
+
+    .project:nth-of-type(even) .about {
+        padding-right: 0px;
+    }
+
+    .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+    }
+}
+
+.slogan .bg {
+    background-color: rgba(0, 64, 114, 0.2);
+    padding: 30px 10px;
+}
+
+.slogan {
+    background-image: url(images/motto.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    background-position: top;
+    color: white;
+    background-attachment: fixed;
+}
+
+.slogan h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.slogan p {
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+}
+
+.slogan p.author {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .slogan h1 {
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+
+    .slogan p {
+        font-family: 'Saira', sans-serif;
+        font-size: 26px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 25px;
+    }
+}
+
+/*Sekcja hobby*/
+.hobby {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(images/hobby1.jpg)
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(images/hobby2.jpg)
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(images/hobby3.jpg)
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(images/hobby4.jpg)
+}
+
+.hobby .item p {
+    font-size: 25px;
+    font-family: 'Saira', sans-serif;
+    color: white;
+    text-align-last: center;
+    /*    line-height: 25vh;*/
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 5px 0;
+}
+
+.hobby h1 {
+    font-family: 'Saira condensed', sans-serif;
+    padding: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+@media (min-width:533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 32vh;
+    }
+}
+
+@media (min-width:768px) {
+    .hobby h1 {
+        font-size: 48px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+}
+
+.hobby .item p {
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+@media (min-width:900px) {
+    .hobby .item p {
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+}
+
+/*Kontakt*/
+.contact {
+    background-color: #000;
+}
+
+.contact h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 70%;
+    margin-bottom: 25px;
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact button:hover {
+    transition: 1s;
+    background-color: #fff;
+    color: black;
+}
+
+.contact .wrapp {
+    padding-top: 20px;
+}
+
+.contact .socials {
+    padding-top: 30px;
+    font-size: 0;
+}
+
+.contact .social {
+    padding: 10px 0;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.contact .social img {
+    float: left;
+    padding-left: 20px;
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    font-size: 15px;
+    float: left;
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+    }
+}
+
+footer {
+    background-color: #2287fd;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+/**/
